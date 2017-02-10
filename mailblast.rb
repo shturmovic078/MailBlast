@@ -39,7 +39,7 @@ Mail.deliver do
       
 
        
-  subject 'ECRM-7 Email Test'
+  subject 'Email Test'<<Array.new(32){rand(36).to_s(36)}.join
   content_type 'text/html; charset=UTF-8'
   body   File.read('template.txt')
 end
